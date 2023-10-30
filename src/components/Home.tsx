@@ -12,7 +12,7 @@ export default function Home() {
       action: t("home.about.action"),
       href: "",
       background: "bg-white",
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       reverse: false,
       desc: t("home.about.desc")
     },
@@ -23,7 +23,7 @@ export default function Home() {
       action: t("home.services.action"),
       href: "",
       background: "bg-gray-200",
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       reverse: true,
       desc: t("home.services.desc")
     },
@@ -34,7 +34,7 @@ export default function Home() {
       action: t("home.contact.action"),
       href: "",
       background: "bg-concrete bg-cover bg-no-repeat bg-center bg-fixed",
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       reverse: false,
       desc: t("home.contact.desc")
     }

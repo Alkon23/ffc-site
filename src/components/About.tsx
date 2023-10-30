@@ -13,7 +13,7 @@ export default function About() {
       id: "col-trainer",
       title: t("about.trainer.title"),
       desc: t("about.trainer.desc"),
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       href: "https://www.linkedin.com/in/jon-ander-gorro%C3%B1o-a39b241b3/",
       // href: "https://www.instagram.com/j.n_g0rr0/,"
       target: "_blank"
@@ -22,7 +22,7 @@ export default function About() {
       id: "col-philosophy",
       title: t("about.philosophy.title"),
       desc: t("about.philosophy.desc"),
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       href: undefined,
       target: undefined
     },
@@ -30,7 +30,7 @@ export default function About() {
       id: "col-services",
       title: t("about.services.title"),
       desc: t("about.services.desc"),
-      img: "src/assets/profile-pic.jpg",
+      img: "/profile-pic.jpg",
       href: "/services",
       target: undefined
     },

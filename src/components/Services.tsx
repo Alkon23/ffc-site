@@ -39,7 +39,7 @@ export default function Services() {
           id: "services-group-sg",
           title: t("services.sgym.title"),
           desc: t("services.sgym.desc"),
-          img: "src/assets/profile-pic.jpg",
+          img: "/profile-pic.jpg",
           specs: {
             duration: "60 mins",
             frequency: t("services.frequency", {frq: "3"}),
@@ -53,7 +53,7 @@ export default function Services() {
           id: "services-group-oh",
           title: t("services.ohiit.title"),
           desc: t("services.ohiit.desc"),
-          img: "src/assets/profile-pic.jpg",
+          img: "/profile-pic.jpg",
           specs: {
             duration: "60 mins",
             frequency: t("services.frequency", {frq: "3"}),
@@ -67,7 +67,7 @@ export default function Services() {
           id: "services-group-ir",
           title: t("services.irun.title"),
           desc: t("services.irun.desc"),
-          img: "src/assets/profile-pic.jpg",
+          img: "/profile-pic.jpg",
           specs: {
             duration: "60 mins",
             frequency: t("services.frequency", {frq: "2"}),
@@ -88,19 +88,19 @@ export default function Services() {
           id: "services-single-prep",
           title: t("services.prep.title"),
           desc: t("services.prep.desc"),
-          img: "src/assets/profile-pic.jpg"
+          img: "/profile-pic.jpg"
         },
         {
           id: "services-single-moni",
           title: t("services.moni.title"),
           desc: t("services.moni.desc"),
-          img: "src/assets/profile-pic.jpg"
+          img: "/profile-pic.jpg"
         },
         {
           id: "services-single-coach",
           title: t("services.coach.title"),
           desc: t("services.coach.desc"),
-          img: "src/assets/profile-pic.jpg"
+          img: "/profile-pic.jpg"
         }
       ],
     }

@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav id="navbar-container" className="sticky top-0 z-20">
       <div className="bg-amber-600 bg-opacity-90 px-16 py-4 flex justify-between items-center">
         <NavLink to="/" id="navbar-logo" className="flex items-center">
-          <img src="/src/assets/profile-pic.jpg" alt="FFC logo" className="h-12 w-12"/>
+          <img src="/profile-pic.jpg" alt="FFC logo" className="h-12 w-12"/>
           <span className="font-bold text-2xl hidden sm:block">Functional Fitness Center</span>
         </NavLink>
 

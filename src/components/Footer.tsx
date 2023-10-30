@@ -41,7 +41,7 @@ export default function Footer() {
         {
           isMobile ? undefined :
             <div id="footer-img" className="hidden md:block">
-              <img src="/src/assets/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
+              <img src="/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
             </div>
         }
 
@@ -61,7 +61,7 @@ export default function Footer() {
         {
           !isMobile ? undefined :
             <div id="footer-img" className="block md:hidden">
-              <img src="/src/assets/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
+              <img src="/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
             </div>
         }
       </div>
