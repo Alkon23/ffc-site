@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Sarrera",
+    "about": "Gutaz",
+    "services":"Serbitzuak",
+    "contact":"Kontaktatu"
+  },
+  "footer": {
+    "find":"Aurkitu gaitzazu",
+    "find_address1":"Bermeo, 49370",
+    "find_address2":"Bizkaia, Euskal Herria",
+    "socials":"Sareak"
+  },
+  "home": {
+    "about": {
+      "title":"Gutaz",
+      "action":"Gutaz",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Gure Serbitzuak",
+      "action":"Irakurri gehiago",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla Leer más"
+    },
+    "contact": {
+      "title":"Askatu zure barne gizakia",
+      "action":"Kontaktatu gaitzazu",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  },
+  "about": {
+    "title":"Nortzuk gara?",
+    "trainer": {
+      "title":"Entrenatzailea",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "philosophy": {
+      "title":"Filosofía",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Serbitzuak",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  "services": {
+    "title": "Zer eskaintzen dugu?",
+    "frequency": "{{frq}} saio astero",
+    "strength" : "Indarra",
+    "cardio": "Kardio",
+    "group": {
+      "title": "Taldeko saioak",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "single": {
+      "title": "Entrenamendu Pertsonala",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "sgym": {
+      "title": "Street Gym",
+      "desc": "Intentsitate altuko indar-zirkuituak. Batez ere, indarra eta erresistentzia lantzen dira. Jarduera hau leku bakar batean egiten da. Saioak burutzen diren lekua aldatu egingo da saio batetik bestera."
+    },
+    "ohiit": {
+      "title": "Outside Hiit",
+      "desc": "Indar-entrenamendua, hainbat erronka fisiko eta lekualdatze konbinatzen dira. Saioak, ubikazio ezberdinetan zehar mugitzeko diseinatuta daude."
+    },
+    "irun": {
+      "title": "Interval Running",
+      "desc": "Bihotz-birikien gaitasuna, hanketako indarra eta erresistentzia lantzeko diseinatutako saioak. Intentsitate tarteekin landuko den running saioak izango dira."
+    },
+    "prep": {
+      "title": "Errutina prestaketa",
+      "desc": "Errutina egokituak prestatzeko lehen urratsa, elkarrizketa da. Hasierako elkarrizketa honi esker, bezeroa gehiago ezagutzeko aukera dugu, zer helburu dituen, zer prestasun duen, zerk motibatzen duen eta abar. Informazio guzti horrekin, lehen errutina prestatzen da. Errutinak aldatu egin daitezke, bi edo hiru hilabetean behin, helburuen eta gaitasunen arabera."
+    },
+    "moni": {
+      "title": "Jarraipen eta egokitzapenak",
+      "desc": "Eskatzen den zerbitzua edozein dela era, jarraipena eta egokitzapena funtsezkoak izango dira. Astero bilerak edo bideo-deiak egiten dira astearen nondik norakoak azaltzeko, aurrerapenei buruz hitz egiteko, bezeroaren sentsazioak ezagutzeko eta egindako saioen feedback bat eman eta jaso ahal izateko. Egokitzapenaren atalak sentsazio horiei eta feedback-ari egiten die erreferentzia; izan ere, bilera horiei esker, etorkizuneko saioak ahalik eta hobekien nola egokitu jakin dezakegu."
+    },
+    "coach": {
+      "title": "Laguntza eta coaching",
+      "desc": "Frogatuta dago kide batekin entrenatzeak onura asko ekartzen dizkiela gure saioei. Hori dela eta, entrenatzaile pertsonal batekin entrenatzeko aukera dago. Honek jarrera desberdinekin lagunduko digu, exekuzio teknikak zuzenduko dizkigu eta hor egongo da, motibatzeko eta saioak ahalik eta eraginkorrenak izateko."
+    }
+  },
+  "contact": {
+    "title": "Nola kontaktatu gaitzakezu?",
+    "meet": {
+      "title": "Geratu dezagun",
+      "desc1": "Aurrez aurre hitz egin nahi baduzu, bidal iezaguzu mezu bat eta gera dezagun.",
+      "desc2": "Hitz egin dezagun leku eta ordu bat adosteko.",
+      "desc3": "Aurki gaitzakezu ",
+      "addr1": "Bermeon",
+      "addr2": ", Bizkaian"
+    },
+    "chat": {
+      "title": "Idatz iezaguzu",
+      "desc": "Kompromisorik gabe hitz egin nahi baduzu, idatz iezaguzu hemendik:"
+    },
+    "follow": {
+      "title": "Jarrai iezaguzu",
+      "desc": "Oraindik zalantzarik baduzu, jarrai iezaguzu gehiago jakiteko:"
+    }
+  }
+}

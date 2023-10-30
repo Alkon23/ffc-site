@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services":"Services",
+    "contact":"Contact"
+  },
+  "footer": {
+    "find":"Find us",
+    "find_address1":"Bermeo, 49370",
+    "find_address2":"Bizkaia, Spain",
+    "socials":"Socials"
+  },
+  "home": {
+    "about": {
+      "title":"About Us",
+      "action":"About us",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Our Services",
+      "action":"Read more",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla Leer más"
+    },
+    "contact": {
+      "title":"Unleash your inner human",
+      "action":"Contact us",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  },
+  "about": {
+    "title":"Who are we?",
+    "trainer": {
+      "title":"Trainer",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "philosophy": {
+      "title":"Philosophy",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Services",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  "services": {
+    "title": "What do we offer?",
+    "frequency": "{{frq}} Weekly sessions",
+    "strength" : "Strength",
+    "cardio": "Cardio",
+    "group": {
+      "title": "Group sessions",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "single": {
+      "title": "Personal training",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "sgym": {
+      "title": "Street Gym",
+      "desc": "High-intensity strength circuits in which strength and endurance are the main focus. This activity is carried out in a single location."
+    },
+    "ohiit": {
+      "title": "Outside Hiit",
+      "desc": "Strength training is combined with different physical challenges and displacements. These sessions are designed to take place in different locations."
+    },
+    "irun": {
+      "title": "Interval Running",
+      "desc": "Sessions designed to work on heart-lung capacity and the strength and endurance of the lower body. It consists of a running session in which we will work with intensity intervals."
+    },
+    "prep": {
+      "title": "Routine preparation",
+      "desc": "The first step in preparing new routines is an interview. This initial interview allows us to get to know the client better, what are his objectives, what is his availability, what are the things that motivate him, etc. With all this information we proceed to prepare a first routine. The routines can be changed every one, two or three months, depending on the objectives and capabilities."
+    },
+    "moni": {
+      "title": "Follow-up and adaptations",
+      "desc": "Regardless of the service required, follow-up and adaptation will be fundamental. Every week, meetings or video calls are held to discuss how the week has gone, to talk about progress, to find out the client's feelings and to be able to give and receive feedback on the sessions carried out. The adaptation section refers to these sensations and feedback, as thanks to these meetings we can find out how to adapt future sessions as best as possible."
+    },
+    "coach": {
+      "title": "Backing and coaching",
+      "desc": "It has been proven that training accompanied brings many benefits to our sessions. That is why there is always the possibility of training with a personal trainer who will help us with the different stances, correct the execution techniques and who will be there to motivate us and make the sessions as efficient as possible."
+    }
+  },
+  "contact": {
+    "title": "How to contact us?",
+    "meet": {
+      "title": "Let's meet",
+      "desc1": "If you wish to talk face to face don't hesitate to send us a message or to call us and we will set up a meeting.",
+      "desc2": "We will set up a meeting place and time.",
+      "desc3": "You can find us in ",
+      "addr1": "Bermeo",
+      "addr2": ", Biscay"
+    },
+    "chat": {
+      "title": "Let's chat",
+      "desc": "If you prefer to talk without commitments you can send us a message via:"
+    },
+    "follow": {
+      "title": "Follow us",
+      "desc": "If you are not yet convinced, follow us to know more about us:"
+    }
+  }
+}

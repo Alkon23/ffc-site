@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services":"Servicios",
+    "contact":"Contacto"
+  },
+  "footer": {
+    "find":"Encuentranos",
+    "find_address1":"Bermeo, 49370",
+    "find_address2":"Bizkaia, España",
+    "socials":"Redes"
+  },
+  "home": {
+    "about": {
+      "title":"Sobre Nosotros",
+      "action":"Sobre nosotros",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Nuestros Servicios",
+      "action":"Leer más",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla Leer más"
+    },
+    "contact": {
+      "title":"Libera tu humano interior",
+      "action":"Contactanos",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  },
+  "about": {
+    "title":"¿Quíénes somos?",
+    "trainer": {
+      "title":"Entrenador",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "philosophy": {
+      "title":"Filosofía",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "services": {
+      "title":"Servicios",
+      "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+ },
+  "services": {
+    "title": "¿Qué ofrecemos?",
+    "frequency": "{{frq}} Sesiones semanales",
+    "strength" : "Fuerza",
+    "cardio": "Cardio",
+    "group": {
+      "title": "Sesiones Grupales",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "single": {
+      "title": "Entrenamiento Personal",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "sgym": {
+      "title": "Street Gym",
+      "desc": "Circuitos de fuerza de alta intensidad en los cuales se trabajan, sobre todo, la fuerza y la resistencia. Esta actividad se lleva a cabo en un solo emplazamiento.",
+      "type": "+Fuerza -Cardio"
+    },
+    "ohiit": {
+      "title": "Outside Hiit",
+      "desc": "Se combina el entrenamiento de fuerza con diferentes retos físicos y desplazamientos. Estas sesiones están diseñadas para realizarse en diferentes ubicaciones.",
+      "type": "Fuerza Cardio"
+    },
+    "irun": {
+      "title": "Interval Running",
+      "desc": "Sesiones diseñadas para trabajar la capacidad cardiopulmonar y la fuerza y resistencia del tren inferior. Consiste en una sesión de running en la cual trabajaremos con intervalos de intensidad.",
+      "type": "-Fuerza +Cardio"
+    },
+    "prep": {
+      "title": "Preparación de rutinas",
+      "desc": "El primer paso a la hora de preparar nuevas rutinas consiste en una entrevista. Esta entrevista inicial nos permite conocer más al cliente, cuales son sus objetivos, cúal es su disponibilidad, cúales son las cosas que le motivan, etc. Con toda esta información se procede a preparar una primera rutina. Las rutinas pueden ser cambiadas cada uno, dos o tres meses, dependiendo de los objetivos y las capacidades."
+    },
+    "moni": {
+      "title": "Seguimiento y adaptación",
+      "desc": "Sea cúal sea el servicio requerido, el seguimiento y la adaptación serán fundamentales. Cada semana se realizan reuniones o videollamadas para comentar cómo ha ido la semana, para hablar de los progresos, para conocer las sensaciones del cliente y para poder dar y recibir un feedback de las sesiones llevadas a cabo. El apartado de adaptación hace referencia a estas sensaciones y al feedback, ya que gracias a estas reuniones podemos conocer cómo adaptar lo mejor posible las futuras sesiones."
+    },
+    "coach": {
+      "title": "Acompañamiento y coaching",
+      "desc": "Está demostrado que entrenar acompañado aporta muchos beneficios a nuestras sesiones. Es por ello que existe la posibilidad de entrenar siempre con un entrenador personal que nos ayudará con las diferentes posturas, nos corregirá las técnicas de ejecución y que estará ahí para motivar y hacer que las sesiones sean lo más eficientes posible."
+    }
+  },
+  "contact": {
+    "title": "¿Cómo contactarnos?",
+    "meet": {
+      "title": "Quedemos",
+      "desc1": "Si quieres hablar en persona mandanos un mensaje y quedemos.",
+      "desc2": "Hablemos y acordemos un lugar y una hora.",
+      "desc3": "Puedes encontrarnos en ",
+      "addr1": "Bermeo",
+      "addr2": ", Vizcaya"
+    },
+    "chat": {
+      "title": "Escribenos",
+      "desc": "Si prefieres hablar sin compromisos puedes escribirnos a:"
+    },
+    "follow": {
+      "title": "Siguenos",
+      "desc": "Si aún tienes dudas siguenos en nuestras redes sociales para saber más:"
+    }
+  }
+}

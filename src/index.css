@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+/**::-webkit-scrollbar {*/
+/*  width: 15px;*/
+/*}*/
+
+/**::-webkit-scrollbar-thumb {*/
+/*  @apply bg-amber-600*/
+/*}*/
+
+/**::-webkit-scrollbar-track {*/
+/*  @apply bg-black*/
+/*}*/
+
+h1 {
+  @apply text-5xl
+}
+
+h2 {
+  @apply text-3xl
+}
+
+h3 {
+  @apply text-2xl
+}
+
+a[target=_blank]:hover + .ic-external {
+  display: block;
+}
+
+/* Carousel styles */
+.carousel-item {
+  @apply absolute top-0 left-0 bg-white w-full h-full transition ease-in-out duration-500
+}
+.hidden-left {
+  @apply -translate-x-full -z-10 duration-0
+}
+.hidden-right {
+  @apply translate-x-full -z-10 duration-0
+}
+.displayed {
+  @apply translate-x-0 z-10
+}
+.changing {
+  @apply translate-x-0 z-0
+}
