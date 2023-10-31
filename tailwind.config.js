@@ -8,6 +8,9 @@ module.exports = {
         extend: {
             backgroundImage: {
                 "concrete": "url('/src/assets/black-background.png')"
+            },
+            fontFamily: {
+                'bungee': ['Bungee'],
             }
         },
     },
