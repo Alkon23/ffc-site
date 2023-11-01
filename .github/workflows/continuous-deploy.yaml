@@ -1,0 +1,21 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: ["master"]
+    paths-ignore: [".github/**"]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cd:
+    name: Continuous Deployment
+    runs-on: [default]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - run: npm run deploy
