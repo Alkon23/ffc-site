@@ -1,15 +1,26 @@
 import {IcBurger, IcClose, IcEng, IcEsp, IcEus} from "./shared/Icons.tsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {NavLink} from "react-router-dom";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const {t} = useTranslation()
+  const [isOpaque, setIsOpaque] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollListener)
+    return () => window.removeEventListener("scroll", scrollListener)
+  })
+
+  const scrollListener = () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    winScroll > 100 ? setIsOpaque(false) : setIsOpaque(true)
+  }
+
   const handleClick = () => {
     setIsOpen(isOpen => !isOpen)
   }
-
-  const {t} = useTranslation()
 
   const navigation = [
     {name: t("nav.home"), href: '/'},
@@ -20,7 +31,9 @@ export default function Navbar() {
 
   return (
     <nav id="navbar-container" className="sticky top-0 z-20">
-      <div className="bg-amber-600 bg-opacity-90 px-16 py-4 flex justify-between items-center">
+      <div className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80"} transition duration-700 bg-amber-600 
+      px-16 py-4 flex justify-between items-center`}>
+
         <NavLink to="/" id="navbar-logo" className="flex items-center">
           <img src="/profile-pic.jpg" alt="FFC logo" className="h-12 w-12"/>
           <span className="font-bold text-2xl hidden sm:block">Functional Fitness Center</span>

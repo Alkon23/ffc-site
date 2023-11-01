@@ -30,7 +30,7 @@ export default function Footer() {
   window.addEventListener("resize", () => setIsMobile(window.innerWidth < 768))
 
   return (
-    <footer className="pt-16 pb-20">
+    <footer className="pt-16 pb-20 relative">
       <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around text-gray-500">
         <div id="footer-location">
           <h3 className="text-2xl text-white pb-1 mb-4 border-b-2">{t("footer.find")}</h3>
@@ -64,6 +64,9 @@ export default function Footer() {
               <img src="/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
             </div>
         }
+      </div>
+      <div className="font-light text-gray-400 absolute right-2 bottom-1">
+        v{APP_VERSION}
       </div>
     </footer>
   )
