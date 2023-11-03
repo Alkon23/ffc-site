@@ -39,6 +39,7 @@ export default function Carousel(props: CarouselProps) {
     (async () => {
       displayedItem?.classList.replace("displayed", "changing")
       nextItem?.classList.replace(getActiveStyles(nextIndex, activeIndex), "displayed")
+      updateRadioButtons(nextIndex)
 
       await new Promise(f => setTimeout(f, 500))
 
@@ -65,6 +66,7 @@ export default function Carousel(props: CarouselProps) {
     (async () => {
       displayedItem?.classList.replace("displayed", "changing")
       prevItem?.classList.replace(getActiveStyles(prevIndex, activeIndex), "displayed")
+      updateRadioButtons(prevIndex)
 
       await new Promise(f => setTimeout(f, 500))
 
@@ -74,6 +76,13 @@ export default function Carousel(props: CarouselProps) {
       setActiveIndex(prevIndex)
       toggleButtons()
     })()
+  }
+
+  const updateRadioButtons = (index: number) => {
+    const currentRb = document.getElementById(`${buildItemId(activeIndex)}-rb`)
+    currentRb?.classList.replace("scale-100", "scale-33")
+    const activeRb = document.getElementById(`${buildItemId(index)}-rb`)
+    activeRb?.classList.replace("scale-33", "scale-100")
   }
 
   const toggleButtons = () => {
@@ -101,7 +110,7 @@ export default function Carousel(props: CarouselProps) {
 
   return (
     <div className="relative w-full h-full overflow-hidden">
-      <div className="">
+      <div>
         {
           props.children.map((child, i) => (
             <div key={child.props.id} id={buildItemId(i)}
@@ -116,14 +125,27 @@ export default function Carousel(props: CarouselProps) {
           ))
         }
       </div>
+      <div>
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-40 flex">
+          {
+            props.children.map((_, i) => (
+              <div key={`${buildItemId(i)}-rb`} id={`${buildItemId(i)}-rb`}
+                   className={`${i === 0 ? "scale-100" : "scale-33"} ` +
+                     "w-4 h-4 bg-amber-600 rounded-full ml-1 transition duration-300"}>
+              </div>
+            ))
+          }
+        </div>
+        <div className="h-5"></div>
+      </div>
       <button id={`${carouselId}-prevButton`} type="button" onClick={onPrev}
               className={`${carouselId}-button absolute left-0 top-1/2 -translate-y-1/2 px-2 z-10 h-full transition 
-                  duration-200 hover:bg-opacity-20 hover:bg-black`}>
+                  duration-200 hover:bg-black/10`}>
         <IcArrowPrev className="text-amber-600 text-4xl"/>
       </button>
       <button id={`${carouselId}-nextButton`} type="button" onClick={onNext}
               className={`${carouselId}-button absolute right-0 top-1/2 -translate-y-1/2 px-2 z-10 h-full transition 
-                  duration-200 hover:bg-opacity-20 hover:bg-black`}>
+                  duration-200 hover:bg-black/10`}>
         <IcArrowNext className="text-amber-600 text-4xl"/>
       </button>
     </div>

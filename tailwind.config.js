@@ -11,6 +11,9 @@ export default {
             },
             fontFamily: {
                 'bungee': ['Bungee'],
+            },
+            scale: {
+                "33": ".33"
             }
         },
     },
