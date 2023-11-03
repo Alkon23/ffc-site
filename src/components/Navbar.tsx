@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav id="navbar-container" className="sticky top-0 z-20">
-      <div className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80"} transition duration-700 bg-amber-600 
+      <div className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80 backdrop-blur-sm"} transition duration-700 bg-amber-600 
       px-16 py-4 flex justify-between items-center`}>
 
         <NavLink to="/" id="navbar-logo" className="flex items-center">
@@ -68,7 +68,7 @@ export default function Navbar() {
 
       {/* Hidden vertical navbar for small displays */}
       <div id="navbar-buttons-vertical" className={
-        "bg-amber-600 bg-opacity-90 py-4 mt-2 mx-[0.5rem] w-[calc(100%-1rem)] fixed border border-amber-400 rounded-lg text-center justify-center md:hidden " +
+        "bg-amber-600 bg-opacity-80 backdrop-blur-sm py-4 mt-2 mx-[0.5rem] w-[calc(100%-1rem)] fixed border border-amber-400 rounded-lg text-center justify-center md:hidden " +
         (isOpen ? "flex" : "hidden")}>
         <ul className="w-1/2">
           {navigation.map((item) => (
