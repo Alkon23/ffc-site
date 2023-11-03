@@ -19,26 +19,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
-  scrollbar-width: none;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-/**::-webkit-scrollbar {*/
-/*  width: 15px;*/
-/*}*/
-
-/**::-webkit-scrollbar-thumb {*/
-/*  @apply bg-amber-600*/
-/*}*/
-
-/**::-webkit-scrollbar-track {*/
-/*  @apply bg-black*/
-/*}*/
-
 h1 {
   @apply text-5xl md:text-6xl
 }
