@@ -1,4 +1,4 @@
-import ColorButton from "./ColorButton.tsx";
+import NavButton from "./NavButton.tsx";
 
 type HeroProps = {
   id: string, title: string, action: string, href: string,
@@ -17,7 +17,7 @@ export function HeroBackground(props: HeroProps) {
           </div>
 
           <div>
-            <ColorButton color="border-white text-white" href={props.href} action={props.action}/>
+            <NavButton color="border-white text-white" href={props.href} action={props.action}/>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export function HeroImage(props: HeroProps) {
             </div>
 
             <div className="px-5 py-2.5">
-              <ColorButton href={props.href} action={props.action}/>
+              <NavButton href={props.href} action={props.action}/>
             </div>
           </div>
         </div>

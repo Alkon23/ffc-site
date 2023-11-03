@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
 import HeaderSmall from "./shared/HeaderSmall.tsx";
-import ColorButton from "./shared/ColorButton.tsx";
+import NavButton from "./shared/NavButton.tsx";
 import {
   IcCalendar,
   IcCardio,
@@ -129,7 +129,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="mt-8 px-5 py-2.5 text-center">
-                  <ColorButton href="/contact" action="Start Now"/>
+                  <NavButton href="/contact" action="Start Now"/>
                 </div>
               </div>
               <div className="relative">
