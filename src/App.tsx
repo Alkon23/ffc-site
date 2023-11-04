@@ -1,17 +1,19 @@
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 import Home from "./components/Home.tsx";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import About from "./components/About.tsx";
 import Services from "./components/Services.tsx";
 import Contact from "./components/Contact.tsx";
 import ScrollButton from "./components/ScrollButton.tsx";
+import {useEffect} from "react";
 
 export default function App() {
 
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop/>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -25,4 +27,14 @@ export default function App() {
       </BrowserRouter>
     </>
   )
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
