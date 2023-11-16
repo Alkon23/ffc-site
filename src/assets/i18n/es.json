@@ -7,7 +7,7 @@
   },
   "footer": {
     "find":"Encuentranos",
-    "find_address1":"Bermeo, 49370",
+    "find_address1":"Bermeo, 48370",
     "find_address2":"Bizkaia, España",
     "socials":"Redes"
   },
@@ -29,7 +29,7 @@
     }
   },
   "about": {
-    "title":"¿Quíénes somos?",
+    "title":"¿Quiénes somos?",
     "trainer": {
       "title":"Entrenador",
       "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
