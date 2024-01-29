@@ -17,7 +17,7 @@ export default function Contact() {
           <p>{t("contact.meet.desc2")}</p>
           <p>{t("contact.meet.desc3")}
             <a href="https://maps.app.goo.gl/pTBtP3GWPaDSCAY27" target="_blank"
-               className="text-amber-600 font-semibold hover:underline">{t("contact.meet.addr1")}</a>{t("contact.meet.addr2")}.
+               className="text-primary-default font-semibold hover:underline">{t("contact.meet.addr1")}</a>{t("contact.meet.addr2")}.
           </p>
           {/*<img src="/src/assets/map.png" alt="FFC location"/>*/}
         </div>
@@ -43,18 +43,18 @@ export default function Contact() {
           <ul className="inline-flex flex-col text-2xl">
             <li className="flex items-center">
               <IcInstagram className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-amber-600">@functionalfitness.center</a>
-              <IcExternalLink className="ml-1 text-sm hidden ic-external text-amber-600"/>
+              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
             <li className="flex items-center">
               <IcTikTok className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-amber-600">@functionalfitness.center</a>
-              <IcExternalLink className="ml-1 text-sm hidden ic-external text-amber-600"/>
+              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
             <li className="flex items-center">
               <IcYoutube className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-amber-600">@functionalfitness.center</a>
-              <IcExternalLink className="ml-1 text-sm hidden ic-external text-amber-600"/>
+              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
           </ul>
         </div>

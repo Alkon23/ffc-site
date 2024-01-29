@@ -41,7 +41,7 @@ export default function Footer() {
         {
           isMobile ? undefined :
             <div id="footer-img" className="hidden md:block">
-              <img src="/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
+              <img src="/logo/logo-white.svg" alt="FFC logo" className="w-44 h-44"/>
             </div>
         }
 
@@ -50,7 +50,7 @@ export default function Footer() {
           <ul>
             {socials.map(item => (
               <li key={item.name}>
-                <a href={item.href} target="_blank" className="flex items-center hover:text-amber-500">
+                <a href={item.href} target="_blank" className="flex items-center hover:text-primary-500">
                   {item.icon}<span className="mx-1">{item.name}</span><IcExternalLink/>
                 </a>
               </li>
@@ -61,7 +61,7 @@ export default function Footer() {
         {
           !isMobile ? undefined :
             <div id="footer-img" className="block md:hidden">
-              <img src="/profile-pic.jpg" alt="FFC logo" className="w-36 h-36"/>
+              <img src="/logo/logo-white.svg" alt="FFC logo" className="w-36 h-36"/>
             </div>
         }
       </div>

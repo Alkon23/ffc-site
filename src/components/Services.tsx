@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
 import HeaderSmall from "./shared/HeaderSmall.tsx";
-import NavButton from "./shared/NavButton.tsx";
+import LinkButton from "./shared/LinkButton.tsx";
 import {
   IcCalendar,
   IcCardio,
@@ -113,14 +113,14 @@ export default function Services() {
         {
           services.map((service) => (
             <div key={service.id} id={service.id}
-                 className="h-fit m-8 border border-amber-600 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]">
+                 className="h-fit m-8 border border-primary-default shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]">
               <h2 className="text-center mt-2">{service.title}</h2>
               <div className="my-5">
                 <div className="flex flex-col md:flex-row text-xl">
                   <div className="md:w-2/3 px-6">
                     <p className="">{service.desc}</p>
                   </div>
-                  <div className="pl-8 mt-4 md:mt-0 md:w-1/3 md:border-l border-amber-600">
+                  <div className="pl-8 mt-4 md:mt-0 md:w-1/3 md:border-l border-primary-default">
                     <ul className="marker:content-['✔'] marker:text-green-600">
                       <li>&nbsp;Some sample text</li>
                       <li>&nbsp;Some sample text</li>
@@ -129,7 +129,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="mt-8 px-5 py-2.5 text-center">
-                  <NavButton href="/contact" action="Start Now"/>
+                  <LinkButton href="/contact" action="Start Now"/>
                 </div>
               </div>
               <div className="relative">

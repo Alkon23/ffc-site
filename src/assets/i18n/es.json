@@ -2,7 +2,11 @@
   "nav": {
     "home": "Inicio",
     "about": "Nosotros",
-    "services":"Servicios",
+    "services": {
+      "text": "Servicios",
+      "trainer": "Entrenamiento Personal",
+      "group": "Sesiones Grupales"
+    },
     "contact":"Contacto"
   },
   "footer": {

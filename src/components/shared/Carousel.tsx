@@ -131,7 +131,7 @@ export default function Carousel(props: CarouselProps) {
             props.children.map((_, i) => (
               <div key={`${buildItemId(i)}-rb`} id={`${buildItemId(i)}-rb`}
                    className={`${i === 0 ? "scale-100" : "scale-33"} ` +
-                     "w-4 h-4 bg-amber-600 rounded-full ml-1 transition duration-300"}>
+                     "w-4 h-4 bg-primary-default rounded-full ml-1 transition duration-300"}>
               </div>
             ))
           }
@@ -141,12 +141,12 @@ export default function Carousel(props: CarouselProps) {
       <button id={`${carouselId}-prevButton`} type="button" onClick={onPrev}
               className={`${carouselId}-button absolute left-0 top-1/2 -translate-y-1/2 px-2 z-10 h-full transition 
                   duration-200 hover:bg-black/10`}>
-        <IcArrowPrev className="text-amber-600 text-4xl"/>
+        <IcArrowPrev className="text-primary-default text-4xl"/>
       </button>
       <button id={`${carouselId}-nextButton`} type="button" onClick={onNext}
               className={`${carouselId}-button absolute right-0 top-1/2 -translate-y-1/2 px-2 z-10 h-full transition 
                   duration-200 hover:bg-black/10`}>
-        <IcArrowNext className="text-amber-600 text-4xl"/>
+        <IcArrowNext className="text-primary-default text-4xl"/>
       </button>
     </div>
   )

@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar.tsx";
+import Navbar from "./components/navbar/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 import Home from "./components/Home.tsx";
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";

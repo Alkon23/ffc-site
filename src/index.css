@@ -1,7 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Neon Energy X';
+  src: local('Neon Energy X'), url('./assets/fonts/neon_energy_x.ttf') format('ttf');
+}
+
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl md:text-9xl
+  }
+
+  h2 {
+    @apply text-3xl
+  }
+
+  h3 {
+    @apply text-2xl
+  }
+
+}
+@layer utilities {
+  a[target=_blank]:hover + .ic-external {
+    display: block;
+  }
+
+  /* Carousel styles */
+  .carousel-item {
+    @apply absolute top-0 left-0 bg-white w-full h-full transition ease-in-out duration-500
+  }
+  .hidden-left {
+    @apply -translate-x-full -z-10 duration-0
+  }
+  .hidden-right {
+    @apply translate-x-full -z-10 duration-0
+  }
+  .displayed {
+    @apply translate-x-0 z-10
+  }
+  .changing {
+    @apply translate-x-0 z-0
+  }
+
+  /* Header neon effect */
+  .green-glow {
+    color: transparent;
+    -webkit-text-stroke: 3px #62df31;
+    text-shadow:
+      0 0 82px rgba(109, 219, 81, 0.51),
+      0 0 92px rgba(109, 219, 81, 0.51);
+  }
+
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,37 +72,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-h1 {
-  @apply text-5xl md:text-6xl
-}
-
-h2 {
-  @apply text-3xl
-}
-
-h3 {
-  @apply text-2xl
-}
-
-a[target=_blank]:hover + .ic-external {
-  display: block;
-}
-
-/* Carousel styles */
-.carousel-item {
-  @apply absolute top-0 left-0 bg-white w-full h-full transition ease-in-out duration-500
-}
-.hidden-left {
-  @apply -translate-x-full -z-10 duration-0
-}
-.hidden-right {
-  @apply translate-x-full -z-10 duration-0
-}
-.displayed {
-  @apply translate-x-0 z-10
-}
-.changing {
-  @apply translate-x-0 z-0
 }

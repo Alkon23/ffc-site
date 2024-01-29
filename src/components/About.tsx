@@ -46,8 +46,8 @@ export default function About() {
             columns.map(item => (
               <div key={item.id} id={item.id} className="px-12 py-6 md:px-6">
                 <figure className="mb-8 flex justify-evenly"><img className="w-72 md:w-auto" src={item.img} alt={item.title}/></figure>
-                <p className="my-4 text-2xl text-amber-600 flex items-center">
-                  <a className="border-b border-amber-600" href={item.href} target={item.target}>
+                <p className="my-4 text-2xl text-primary-default flex items-center">
+                  <a className="border-b border-primary-default" href={item.href} target={item.target}>
                     {item.title}
                   </a>
                   {
