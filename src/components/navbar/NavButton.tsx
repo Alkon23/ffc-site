@@ -46,7 +46,7 @@ export function NavMenuButton(props: MenuButtonProps) {
       </NavLink>
 
       {/* Hidden dropdown menu */}
-      <div className="hidden group-hover:flex flex-col absolute font-medium">
+      <div className="hidden group-hover:flex flex-col absolute font-medium pt-[calc(1rem+3px)]">
         {elements.map((element, i) => (
           <div key={element.text} className='transition hover:translate-x-2'>
             <NavLink

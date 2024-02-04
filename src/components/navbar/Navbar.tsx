@@ -38,12 +38,12 @@ export default function Navbar() {
 
   return (
     <nav id="navbar-container" className="sticky top-0 z-20">
-      <div className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80 backdrop-blur-sm"} transition duration-700 bg-primary-default 
+      <div id="navbar-content" className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80 backdrop-blur-sm"} transition duration-700 bg-primary-default 
       px-16 py-4 flex justify-between items-center`}>
 
         <NavLink to="/" id="navbar-logo" className="flex items-center">
           <img src="/logo/logo-white-simple.svg" alt="FFC logo" className="h-12 w-12 mr-6 scale-150"/>
-          <span className="font-neon-energy-x font-bold text-2xl hidden sm:block">Functional Fitness Center</span>
+          <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">Functional Fitness Center</span>
         </NavLink>
 
         <div className="items-baseline">
