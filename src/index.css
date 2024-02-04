@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Neon Energy X';
-  src: local('Neon Energy X'), url('./assets/fonts/neon_energy_x.ttf') format('ttf');
+  src: local('Neon Energy X'), url('../public/fonts/neon_energy_x.ttf') format('ttf');
 }
 
 @tailwind utilities;
