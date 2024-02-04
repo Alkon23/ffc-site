@@ -5,8 +5,8 @@ import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import About from "./components/About.tsx";
 import Services from "./components/Services.tsx";
 import Contact from "./components/Contact.tsx";
-import ScrollButton from "./components/ScrollButton.tsx";
 import {useEffect} from "react";
+import FloatingActions from "./components/fab/FloatingActions.tsx";
 
 export default function App() {
 
@@ -22,7 +22,7 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="*" element={<Home/>}/>
         </Routes>
-        <ScrollButton/>
+        <FloatingActions/>
         <Footer/>
       </BrowserRouter>
     </>

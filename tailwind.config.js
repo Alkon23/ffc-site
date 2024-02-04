@@ -10,7 +10,9 @@ export default {
         extend: {
             colors: {
                 "primary": colors.amber,
-                "primary-default": colors.amber["600"]
+                "primary-default": colors.amber["600"],
+                "secondary": "#6DDB51"
+                // "secondary": "#62df31"
             },
             backgroundImage: {
                 "concrete": "url('/src/assets/black-background.png')"

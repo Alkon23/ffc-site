@@ -105,6 +105,9 @@
     "follow": {
       "title": "Siguenos",
       "desc": "Si aún tienes dudas siguenos en nuestras redes sociales para saber más:"
+    },
+    "whatsapp": {
+      "message": "Hola, me gustaría contactar contigo"
     }
   }
 }
