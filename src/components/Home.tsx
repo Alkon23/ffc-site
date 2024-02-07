@@ -1,6 +1,7 @@
 import Header from "./shared/Header.tsx";
 import {HeroBackground, HeroImage} from "./shared/Hero.tsx";
 import {useTranslation} from "react-i18next";
+import {useEffect} from "react";
 
 export default function Home() {
   const {t} = useTranslation()
@@ -39,6 +40,17 @@ export default function Home() {
       desc: t("home.contact.desc")
     }
   ]
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('!left-0')
+        }
+      })
+    })
+    document.querySelectorAll('.slide-hero').forEach(e => observer.observe(e))
+  })
 
   return (
     <>
