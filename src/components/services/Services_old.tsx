@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
-import HeaderSmall from "./shared/HeaderSmall.tsx";
-import LinkButton from "./shared/LinkButton.tsx";
+import HeaderSmall from "../shared/HeaderSmall.tsx";
+import LinkButton from "../shared/LinkButton.tsx";
 import {
   IcCalendar,
   IcCardio,
@@ -9,8 +9,8 @@ import {
   IcNeutral,
   IcStrength,
   IcTimer
-} from "./shared/Icons.tsx";
-import Carousel from "./shared/Carousel.tsx";
+} from "../shared/Icons.tsx";
+import Carousel from "../shared/Carousel.tsx";
 import {ReactElement} from "react";
 
 type ServiceElement = {

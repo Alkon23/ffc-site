@@ -29,8 +29,10 @@ export default function Navbar() {
     {text: t("nav.about"), href: '/about', type: 'simple', elements: []},
     {
       text: t("nav.services.text"), href: '/services', type: 'menu', elements: [
-        {text: t("nav.services.trainer"), href: '/trainer'},
+        {text: t("nav.services.personal"), href: '/personal'},
+        {text: t("nav.services.couple"), href: '/couple'},
         {text: t("nav.services.group"), href: '/group'},
+        {text: t("nav.services.online"), href: '/online'},
       ]
     },
     {text: t("nav.contact"), href: '/contact', type: 'simple', elements: []},

@@ -4,8 +4,10 @@
     "about": "Nosotros",
     "services": {
       "text": "Servicios",
-      "trainer": "Entrenamiento Personal",
-      "group": "Sesiones Grupales"
+      "personal": "Entrenamiento Personal",
+      "couple": "Entrenamiento en Pareja",
+      "group": "Entrenamientos Grupales",
+      "online": "Entrenamientos Online"
     },
     "contact":"Contacto"
   },
@@ -86,6 +88,49 @@
     "coach": {
       "title": "Acompañamiento y coaching",
       "desc": "Está demostrado que entrenar acompañado aporta muchos beneficios a nuestras sesiones. Es por ello que existe la posibilidad de entrenar siempre con un entrenador personal que nos ayudará con las diferentes posturas, nos corregirá las técnicas de ejecución y que estará ahí para motivar y hacer que las sesiones sean lo más eficientes posible."
+    }
+  },
+  "service": {
+    "personal": {
+      "title": "Entrenamientos Personales",
+      "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…"
+    },
+    "couple": {
+      "title": "Entrenamientos en Pareja",
+      "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…"
+    },
+    "group": {
+      "title": "Entrenamientos Grupales",
+      "subtitle": "La motivación del grupo ayuda a superar tus metas"
+    },
+    "online": {
+      "title": "Entrenamientos Online",
+      "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!"
+    },
+    "perks": {
+      "interview": "Entrevista personal",
+      "routine": "Plan de entreno personalizado y adaptable",
+      "followup": "Revisión y evaluación mensual",
+      "online": "Sesiones Online mediante videollamadas",
+      "coach": "Acompañamiento y coaching",
+      "location": "Entrenamiento en el exterior/interior, tu eliges el lugar",
+      "home": "Entrenamiento a domicilio",
+      "whatsapp": "Soporte por Whatsapp disponible cuando lo necesites",
+      "couple": "Entrenos adaptados para hacer en pareja"
+    },
+    "subservice": {
+      "personalize": {
+        "title": "Servicios personalizados",
+        "desc": "Te ofrecemos una amplia gama de servicios para amoldarnos a tus necesidades, en los que acompañado siempre de tu entrenador personal, podrás conseguir tus objetivos, algunos tan demandados como, <strong>perder grasa</strong>, <strong>ganar masa muscular</strong>, <strong>tonificar y modelar tu cuerpo</strong> o simplemente tener un mínimo de <strong>actividad física</strong>, tan necesaria para nuestra salud."
+      },
+      "routine": {
+        "title": "Preparación de rutinas",
+        "desc": "El primer paso a la hora de preparar nuevas rutinas consiste en una entrevista. Esta entrevista inicial nos permite conocer más al cliente, cuales son sus objetivos, cúal es su disponibilidad, cúales son las cosas que le motivan, etc. Con toda esta información se procede a preparar una primera rutina. <strong>Las rutinas pueden ser cambiadas cada uno, dos o tres meses</strong>, dependiendo de los objetivos y las capacidades."
+      },
+      "followup": {
+        "title": "Seguimiento y adaptación",
+        "desc": "Sea cúal sea el servicio requerido, el seguimiento y la adaptación serán fundamentales. <strong>Cada semana</strong> se realizan <strong>reuniones</strong> o <strong>videollamadas</strong> para comentar cómo ha ido la semana, para hablar de los <strong>progresos</strong>, para conocer las <strong>sensaciones</strong> del cliente y para poder dar y recibir un <strong>feedback</strong> de las sesiones llevadas a cabo. El apartado de adaptación hace referencia a estas sensaciones y al feedback, ya que gracias a estas reuniones podemos conocer cómo <strong>adaptar lo mejor posible las futuras sesiones</strong>."
+      }
     }
   },
   "contact": {
