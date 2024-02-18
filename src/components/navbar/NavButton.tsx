@@ -1,4 +1,5 @@
 import {NavLink} from "react-router-dom";
+import {IcTriangleDown} from "../shared/Icons.tsx";
 
 type ButtonProps = { text: string, href: string }
 
@@ -40,8 +41,8 @@ export function NavMenuButton(props: MenuButtonProps) {
           "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 " +
           "after:content-[''] font-medium"
         }>
-        <span className={"px-3"}>
-            {base.text}
+        <span className="px-3 inline-flex items-baseline">
+            {base.text}&nbsp;<IcTriangleDown className="text-[.65rem]"/>
         </span>
       </NavLink>
 

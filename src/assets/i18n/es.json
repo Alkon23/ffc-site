@@ -152,7 +152,9 @@
       "desc": "Si aún tienes dudas siguenos en nuestras redes sociales para saber más:"
     },
     "whatsapp": {
-      "message": "Hola, me gustaría contactar contigo"
+      "message1": "Hola, me gustaría contactar contigo",
+      "message2": "Hola, me gustaría saber más",
+      "message3": "Hola, me gustaría conocer las tarifas"
     }
   }
 }

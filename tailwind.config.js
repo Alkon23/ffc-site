@@ -11,8 +11,7 @@ export default {
             colors: {
                 "primary": colors.amber,
                 "primary-default": colors.amber["600"],
-                "secondary": "#6DDB51"
-                // "secondary": "#62df31"
+                "secondary": "#6DDB51",
             },
             backgroundImage: {
                 "concrete": "url('/src/assets/black-background.png')"
@@ -30,10 +29,10 @@ export default {
                     '0%': {transform: 'translateX(-20%)', opacity: 0},
                     '50%': {transform: 'translateX(5%)'},
                     '100%': {transform: 'translateX(0)', opacity: 1}
-                }
+                },
             },
             animation: {
-                'bounce-left': 'bounce-left .3s ease-in-out forwards'
+                'bounce-left': 'bounce-left .3s ease-in-out forwards',
             }
         },
     },
