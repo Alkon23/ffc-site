@@ -53,7 +53,7 @@ export function NavMenuButton(props: MenuButtonProps) {
             <NavLink
               to={base.href + element.href}
               style={setDelay(i)}
-              className={`${props.isOpaque ? "bg-opacity-100" : "bg-opacity-80 backdrop-blur-sm"} ` +
+              className={`${props.isOpaque ? "bg-opacity-100" : "bg-opacity-50"} ` +
                 'transition duration-700 bg-primary-default block px-3 first:pt-3 pb-3 opacity-0 group-hover:animate-bounce-left'}>
               <span>{element.text}</span>
             </NavLink>

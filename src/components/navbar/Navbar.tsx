@@ -7,7 +7,7 @@ import {NavMenuButton, NavSimpleButton} from "./NavButton.tsx";
 
 export default function Navbar() {
   const {t} = useTranslation()
-  const [isOpaque, setIsOpaque] = useState(true)
+  const [isOpaque, setIsOpaque] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const scrollListener = () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    winScroll > 100 ? setIsOpaque(false) : setIsOpaque(true)
+    winScroll > 200 ? setIsOpaque(true) : setIsOpaque(false)
   }
 
   const handleClick = () => {
@@ -39,8 +39,8 @@ export default function Navbar() {
   ]
 
   return (
-    <nav id="navbar-container" className="sticky top-0 z-20">
-      <div id="navbar-content" className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-80 backdrop-blur-sm"} transition duration-700 bg-primary-default 
+    <nav id="navbar-container" className="float-left sticky top-0 z-20 w-full">
+      <div id="navbar-content" className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-0"} transition duration-700 bg-primary-default 
       px-16 py-4 flex justify-between items-center`}>
 
         <NavLink to="/" id="navbar-logo" className="flex items-center">
