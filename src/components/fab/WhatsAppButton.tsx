@@ -24,7 +24,7 @@ export default function WhatsAppButton() {
               messages.map(({msg, delay}, i) => (
                 <a href={buildHref(msg)} target="_blank" key={`whatsapp-msg-${i}`}
                    className={"mt-[0.18rem] transition-visibility " + delay}>
-                  <div className={"bg-white hover:bg-secondary text-black p-2 rounded-lg " +
+                  <div className={"bg-gray-50 hover:bg-secondary text-black p-2 rounded-lg " +
                     `${i === messages.length - 1 ? 'chat-flush' : ''}`}>
                     <p>{msg}</p>
                   </div>
