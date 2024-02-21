@@ -24,6 +24,9 @@ export default {
             scale: {
                 "33": ".33"
             },
+            fontSize: {
+              "2xs": ".65rem"
+            },
             keyframes: {
                 "bounce-left": {
                     '0%': {transform: 'translateX(-20%)', opacity: 0},

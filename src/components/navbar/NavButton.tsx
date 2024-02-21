@@ -42,7 +42,7 @@ export function NavMenuButton(props: MenuButtonProps) {
           "after:content-[''] font-medium"
         }>
         <span className="px-3 inline-flex items-baseline">
-            {base.text}&nbsp;<IcTriangleDown className="text-[.65rem]"/>
+            {base.text}&nbsp;<IcTriangleDown className="text-2xs"/>
         </span>
       </NavLink>
 
