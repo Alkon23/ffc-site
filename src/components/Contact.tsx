@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <>
-      <HeaderSmall title={t("contact.title")}/>
+      <HeaderSmall title={t("contact.title")} subtitle={t("nav.contact")}/>
       <div className="flex flex-col text-center lg:text-left lg:flex-row text-black text-xl">
         <div className="bg-white w-full p-10">
           <h2 className="mb-10 font-bold">{t("contact.meet.title")}</h2>

@@ -34,7 +34,7 @@ export default function Services() {
 
   return (
     <>
-      <HeaderSmall title={t("services.title")}/>
+      <HeaderSmall title={t("services.title")} subtitle={t("nav.services.text")}/>
       <div id="services-content-group" className="bg-white text-black flex flex-col md:flex-row justify-evenly p-16">
         {
           services.map(service => (

@@ -39,7 +39,7 @@ export default function About() {
 
   return (
     <>
-      <HeaderSmall title={t("about.title")}/>
+      <HeaderSmall title={t("about.title")} subtitle={t("nav.about")}/>
       <div className="bg-white w-full flex justify-evenly">
         <div id="about-content-group" className="text-black flex flex-col md:flex-row pb-24 pt-8 max-w-7xl">
           {
