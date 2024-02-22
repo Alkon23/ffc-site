@@ -18,6 +18,7 @@ export default {
             },
             fontFamily: {
                 'bungee': ['Bungee'],
+                'anton': ['Anton'],
                 'archivo-black': ['Archivo Black'],
                 'neon-energy-x': ['Neon Energy X'],
             },

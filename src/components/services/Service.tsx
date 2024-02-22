@@ -89,7 +89,7 @@ export default function Service(props: { type: SERVICES }) {
 
   return (
     <>
-      <HeaderSmall title={t(service.title)}/>
+      <HeaderSmall title={t(service.title)} subtitle={t("nav.services.text")}/>
       <div id="services-content-group" className="bg-white text-black p-6">
         <div className="flex flex-row">
           <img src={service.img} alt={t(service.title)} className="ml-16"/>
