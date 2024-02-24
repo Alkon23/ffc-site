@@ -2,6 +2,7 @@ import Header from "./shared/Header.tsx";
 import {HeroBackground, HeroImage} from "./shared/Hero.tsx";
 import {useTranslation} from "react-i18next";
 import {useEffect} from "react";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   const {t} = useTranslation()
@@ -55,6 +56,10 @@ export default function Home() {
   return (
     <>
       <Header/>
+      <Marquee className="bg-primary-default font-archivo-black text-2xl text-outline-black uppercase py-1.5"
+               autoFill={true}>
+        &nbsp;·&nbsp;{t("home.marquee")}
+      </Marquee>
 
       {sections.map(section => (
         section.type === "HeroImage" ?
