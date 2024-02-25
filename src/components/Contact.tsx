@@ -28,7 +28,7 @@ export default function Contact() {
           <ul className="inline-flex flex-col text-2xl">
             <li className="inline-flex items-center">
               <IcWhatsapp className="w-10 h-10 mr-1"/>
-              <p>+34 666 666 666</p>
+              <a href="https://wa.me/34000000000" target="_blank">+34 666 666 666</a>
             </li>
             <li className="inline-flex items-center">
               <IcEmail className="w-10 h-10 mr-2"/>
