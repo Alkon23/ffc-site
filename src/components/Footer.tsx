@@ -6,17 +6,17 @@ const socials = [
   {
     icon: <IcInstagram/>,
     name: "Instagram",
-    href: "https://www.instagram.com/functionalfitness.center/"
+    href: "https://www.instagram.com/scivitalfit/"
   },
   {
     icon: <IcTikTok/>,
     name: "TikTok",
-    href: "https://www.instagram.com/functionalfitness.center/"
+    href: "https://www.instagram.com/scivitalfit/"
   },
   {
     icon: <IcYoutube/>,
     name: "Youtube",
-    href: "https://www.instagram.com/functionalfitness.center/"
+    href: "https://www.instagram.com/scivitalfit/"
   },
 ]
 

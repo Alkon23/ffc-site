@@ -43,17 +43,17 @@ export default function Contact() {
           <ul className="inline-flex flex-col text-2xl">
             <li className="flex items-center">
               <IcInstagram className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <a href="" target="_blank" className="hover:text-primary-default">@scivitalfit</a>
               <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
             <li className="flex items-center">
               <IcTikTok className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <a href="" target="_blank" className="hover:text-primary-default">@scivitalfit</a>
               <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
             <li className="flex items-center">
               <IcYoutube className="w-10 h-10 mr-1"/>
-              <a href="" target="_blank" className="hover:text-primary-default">@functionalfitness.center</a>
+              <a href="" target="_blank" className="hover:text-primary-default">@scivitalfit</a>
               <IcExternalLink className="ml-1 text-sm hidden ic-external text-primary-default"/>
             </li>
           </ul>
