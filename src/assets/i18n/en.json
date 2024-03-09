@@ -2,7 +2,13 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services":"Services",
+    "services": {
+      "text": "Services",
+      "personal": "Personal Training",
+      "couple": "Couple Training",
+      "group": "Group Sessions",
+      "online": "Online Advice"
+    },
     "contact":"Contact"
   },
   "footer": {
@@ -12,6 +18,7 @@
     "socials":"Socials"
   },
   "home": {
+    "more":  "more info",
     "about": {
       "title":"About Us",
       "action":"About us",
@@ -81,6 +88,49 @@
       "desc": "It has been proven that training accompanied brings many benefits to our sessions. That is why there is always the possibility of training with a personal trainer who will help us with the different stances, correct the execution techniques and who will be there to motivate us and make the sessions as efficient as possible."
     }
   },
+  "service": {
+    "personal": {
+      "title": "Personal Training",
+      "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…"
+    },
+    "couple": {
+      "title": "Couple Training",
+      "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…"
+    },
+    "group": {
+      "title": "Group Sessions",
+      "subtitle": "La motivación del grupo ayuda a superar tus metas"
+    },
+    "online": {
+      "title": "Online Advice",
+      "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!"
+    },
+    "perks": {
+      "interview": "Entrevista personal",
+      "routine": "Plan de entreno personalizado y adaptable",
+      "followup": "Revisión y evaluación mensual",
+      "online": "Sesiones Online mediante videollamadas",
+      "coach": "Acompañamiento y coaching",
+      "location": "Entrenamiento en el exterior/interior, tu eliges el lugar",
+      "home": "Entrenamiento a domicilio",
+      "whatsapp": "Soporte por Whatsapp disponible cuando lo necesites",
+      "couple": "Entrenos adaptados para hacer en pareja"
+    },
+    "subservice": {
+      "personalize": {
+        "title": "Servicios personalizados",
+        "desc": "Te ofrecemos una amplia gama de servicios para amoldarnos a tus necesidades, en los que acompañado siempre de tu entrenador personal, podrás conseguir tus objetivos, algunos tan demandados como, <strong>perder grasa</strong>, <strong>ganar masa muscular</strong>, <strong>tonificar y modelar tu cuerpo</strong> o simplemente tener un mínimo de <strong>actividad física</strong>, tan necesaria para nuestra salud."
+      },
+      "routine": {
+        "title": "Routine preparation",
+        "desc": "The first step in preparing new routines is an interview. This initial interview allows us to get to know the client better, what are his objectives, what is his availability, what are the things that motivate him, etc. With all this information we proceed to prepare a first routine. <strong>The routines can be changed every one, two or three months</strong>, depending on the objectives and capabilities."
+      },
+      "followup": {
+        "title": "Follow-up and adaptations",
+        "desc": "Regardless of the service required, follow-up and adaptation will be fundamental. <strong>Every week, meetings or video calls</strong> are held to discuss how the week has gone, to talk about <strong>progress</strong>, to find out the client's <strong>feelings</strong> and to be able to give and receive <strong>feedback</strong> on the sessions carried out. The adaptation section refers to these sensations and feedback, as thanks to these meetings we can find out how to <strong>adapt future sessions as best as possible.</strong>"
+      }
+    }
+  },
   "contact": {
     "title": "How to contact us?",
     "meet": {
@@ -98,6 +148,11 @@
     "follow": {
       "title": "Follow us",
       "desc": "If you are not yet convinced, follow us to know more about us:"
+    },
+    "whatsapp": {
+      "message1": "Hi, I'd like to contact you",
+      "message2": "Hi, I'd like to know more",
+      "message3": "Hi, I'd like to know the pricing"
     }
   }
 }

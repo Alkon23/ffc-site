@@ -2,7 +2,13 @@
   "nav": {
     "home": "Sarrera",
     "about": "Gutaz",
-    "services":"Serbitzuak",
+    "services": {
+      "text": "Serbitzuak",
+      "personal": "Entrenamendu Pertsonalak",
+      "couple": "Bikoteko Entrenamenduak",
+      "group": "Taldeko saioak",
+      "online": "Online Aholkularitza"
+    },
     "contact":"Kontaktua"
   },
   "footer": {
@@ -12,6 +18,7 @@
     "socials":"Sareak"
   },
   "home": {
+    "more":  "info gehiago",
     "about": {
       "title":"Gutaz",
       "action":"Gutaz",
@@ -81,6 +88,49 @@
       "desc": "Frogatuta dago kide batekin entrenatzeak onura asko ekartzen dizkiela gure saioei. Hori dela eta, entrenatzaile pertsonal batekin entrenatzeko aukera dago. Honek jarrera desberdinekin lagunduko digu, exekuzio teknikak zuzenduko dizkigu eta hor egongo da, motibatzeko eta saioak ahalik eta eraginkorrenak izateko."
     }
   },
+  "service": {
+    "personal": {
+      "title": "Entrenamendu Pertsonalak",
+      "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…"
+    },
+    "couple": {
+      "title": "Bikoteko Entrenamenduak",
+      "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…"
+    },
+    "group": {
+      "title": "Taldeko saioak",
+      "subtitle": "La motivación del grupo ayuda a superar tus metas"
+    },
+    "online": {
+      "title": "Online Aholkularitza",
+      "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!"
+    },
+    "perks": {
+      "interview": "Entrevista personal",
+      "routine": "Plan de entreno personalizado y adaptable",
+      "followup": "Revisión y evaluación mensual",
+      "online": "Sesiones Online mediante videollamadas",
+      "coach": "Acompañamiento y coaching",
+      "location": "Entrenamiento en el exterior/interior, tu eliges el lugar",
+      "home": "Entrenamiento a domicilio",
+      "whatsapp": "Soporte por Whatsapp disponible cuando lo necesites",
+      "couple": "Entrenos adaptados para hacer en pareja"
+    },
+    "subservice": {
+      "personalize": {
+        "title": "Servicios personalizados",
+        "desc": "Te ofrecemos una amplia gama de servicios para amoldarnos a tus necesidades, en los que acompañado siempre de tu entrenador personal, podrás conseguir tus objetivos, algunos tan demandados como, <strong>perder grasa</strong>, <strong>ganar masa muscular</strong>, <strong>tonificar y modelar tu cuerpo</strong> o simplemente tener un mínimo de <strong>actividad física</strong>, tan necesaria para nuestra salud."
+      },
+      "routine": {
+        "title": "Errutina prestaketa",
+        "desc": "Errutina egokituak prestatzeko lehen urratsa, elkarrizketa da. Hasierako elkarrizketa honi esker, bezeroa gehiago ezagutzeko aukera dugu, zer helburu dituen, zer prestasun duen, zerk motibatzen duen eta abar. Informazio guzti horrekin, lehen errutina prestatzen da. <strong>Errutinak aldatu egin daitezke, bi edo hiru hilabetean behin</strong>, helburuen eta gaitasunen arabera."
+      },
+      "followup": {
+        "title": "Jarraipen eta egokitzapenak",
+        "desc": "Eskatzen den zerbitzua edozein dela era, jarraipena eta egokitzapena funtsezkoak izango dira. <strong>Astero bilerak</strong> edo <strong>bideo-deiak</strong> egiten dira astearen nondik norakoak azaltzeko, <strong>aurrerapenei</strong> buruz hitz egiteko, bezeroaren <strong>sentsazioak</strong> ezagutzeko eta egindako saioen <strong>feedback</strong> bat eman eta jaso ahal izateko. Egokitzapenaren atalak sentsazio horiei eta feedback-ari egiten die erreferentzia; izan ere, bilera horiei esker, <strong>etorkizuneko saioak ahalik eta hobekien nola egokitu jakin dezakegu.</strong>"
+      }
+    }
+  },
   "contact": {
     "title": "Nola kontaktatu gaitzakezu?",
     "meet": {
@@ -98,6 +148,11 @@
     "follow": {
       "title": "Jarrai iezaguzu",
       "desc": "Oraindik zalantzarik baduzu, jarrai iezaguzu gehiago jakiteko:"
+    },
+    "whatsapp": {
+      "message1": "Kaixo, zurekin kontaktatu nahi nuke",
+      "message2": "Kaixo, gehiago jakin nahi nuke",
+      "message3": "Kaixo, tarifak ezagutzea gustoko nuke"
     }
   }
 }
