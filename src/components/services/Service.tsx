@@ -1,5 +1,6 @@
 import HeaderSmall from "../shared/HeaderSmall.tsx";
-import {Trans, useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
+import TransTextContainer from "../shared/TransTextContainer.tsx";
 
 export enum SERVICES {
   Personal,
@@ -90,34 +91,24 @@ export default function Service(props: { type: SERVICES }) {
   return (
     <>
       <HeaderSmall title={t(service.title)} subtitle={t("nav.services.text")}/>
-      <div id="services-content-group" className="bg-white text-black p-6">
+      <div id="services-content-group" className="bg-white text-black p-6 px-20">
         <div className="flex flex-row">
-          <img src={service.img} alt={t(service.title)} className="ml-16"/>
+          <img src={service.img} alt={t(service.title)}/>
           <div className="flex flex-col w-full p-8">
             <h3 className="font-medium text-center mb-12">{t(service.subtitle)}</h3>
             <ul className="marker:content-['✔'] marker:text-secondary text-xl ml-16">
               {
-                service.perks.map((perk: string) => (
-                  <li className="mb-3">&nbsp;{t(perk)}</li>
+                service.perks.map((perk: string, i: number) => (
+                  <li key={`perk-${i}`} className="mb-3">&nbsp;{t(perk)}</li>
                 ))
               }
             </ul>
           </div>
         </div>
-        <div className="mt-36 ml-16 text-lg">
+        <div className="mt-36 mb-28 text-lg">
           {
-            subServices.map(subService => (
-              <div key={subService.key}>
-                <hr className="w-2/4 h-[1px] mt-6 mb-4 mx-auto bg-gray-300 border-0 rounded first:hidden"/>
-                <div className="flex flex-row items-center my-8">
-                  <div className="flex flex-col mr-12">
-                    <h3 className="underline">{t(subService.title)}</h3>
-                    <br/>
-                    <p><Trans i18nKey={subService.desc}/></p>
-                  </div>
-                  <img src={subService.img} alt={t(subService.title)} className="w-64"/>
-                </div>
-              </div>
+            subServices.map(({key, title, desc}) => (
+              <TransTextContainer key={key} title={title} content={desc} />
             ))
           }
         </div>
