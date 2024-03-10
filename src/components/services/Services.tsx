@@ -1,4 +1,4 @@
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import HeaderSmall from "../shared/HeaderSmall.tsx";
 import {NavLink} from "react-router-dom";
 
@@ -8,25 +8,29 @@ export default function Services() {
   const services = [
     {
       id: "service-personal",
-      title: t("service.personal.title"),
+      title: "service.personal.title",
+      desc: "service.personal.desc",
       img: "/profile-pic.jpg",
       href: "/services/personal"
     },
     {
       id: "service-couple",
-      title: t("service.couple.title"),
+      title: "service.couple.title",
+      desc: "service.couple.desc",
       img: "/profile-pic.jpg",
       href: "/services/couple"
     },
     {
       id: "service-group",
-      title: t("service.group.title"),
+      title: "service.group.title",
+      desc: "service.group.desc",
       img: "/profile-pic.jpg",
       href: "/services/group"
     },
     {
       id: "service-online",
-      title: t("service.online.title"),
+      title: "service.online.title",
+      desc: "service.online.desc",
       img: "/profile-pic.jpg",
       href: "/services/online"
     },
@@ -35,22 +39,32 @@ export default function Services() {
   return (
     <>
       <HeaderSmall title={t("services.title")} subtitle={t("nav.services")}/>
-      <div id="services-content-group" className="bg-white text-black flex flex-col md:flex-row justify-evenly p-16">
+      <div id="services-content-group" className="bg-white text-black flex flex-wrap flex-col md:flex-row justify-evenly p-16">
         {
           services.map(service => (
-            <div key={service.id} id={service.id} className="px-12 py-6 md:px-6 flex flex-col flex-wrap items-center">
-              <NavLink to={service.href}>
-                <img className="w-72 md:w-auto" src={service.img} alt={service.title}/>
-              </NavLink>
-              <p className="my-4 text-2xl text-primary-default flex items-center border-b border-primary-default">
-                <NavLink to={service.href}>
-                  {service.title}
-                </NavLink>
-              </p>
-            </div>
+            <ServiceCard key={service.id} service={service}/>
           ))
         }
       </div>
     </>
+  )
+}
+
+function ServiceCard(props: {service: {id:string, title:string, desc:string, img:string, href:string}}) {
+  const {t} = useTranslation()
+  const {service} = props
+
+  return (
+    <div id={service.id} className="px-12 py-6 md:px-6 md:max-w-sm flex flex-col items-center transition ease-in-out duration-300 hover:shadow-xl">
+      <NavLink to={service.href}>
+        <img className="w-72 md:w-auto" src={service.img} alt={t(service.title)}/>
+      </NavLink>
+      <p className="my-4 text-2xl text-primary-default flex items-center border-b border-primary-default">
+        <NavLink to={service.href}>
+          {t(service.title)}
+        </NavLink>
+      </p>
+      <p className="font-montserrat font-light text-center"><Trans i18nKey={service.desc}/></p>
+    </div>
   )
 }

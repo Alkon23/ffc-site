@@ -89,19 +89,23 @@
   "service": {
     "personal": {
       "title": "Entrenamiento Personal",
-      "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…"
+      "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…",
+      "desc": "Ofrecemos un enfoque personalizado para alcanzar tus objetivos de fitness y salud.<br><br>Diseñaremos un programa de entrenamiento adaptado a ti, teniendo en cuenta tus necesidades, habilidades y limitaciones.<br><br>Te guiaremos paso a paso, brindándote motivación y apoyo para maximizar tus resultados."
     },
     "couple": {
       "title": "Entrenamiento en Pareja",
-      "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…"
+      "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…",
+      "desc": "¿Qué mejor manera de motivarse mutuamente que entrenar con tu pareja?<br><br>Nuestro programa de entrenamiento en pareja está diseñado para fomentar el trabajo en equipo, fortalecer la relación y lograr objetivos compartidos.<br><br>Adaptaremos los ejercicios para que se ajusten a ambos, brindando un ambiente divertido y desafiante."
     },
     "group": {
       "title": "Sesiones Grupales",
-      "subtitle": "La motivación del grupo ayuda a superar tus metas"
+      "subtitle": "La motivación del grupo ayuda a superar tus metas",
+      "desc": "Únete a nuestras sesiones grupales y sé parte de una comunidad que te apoyará en cada paso del camino.<br><br>Nuestras sesiones grupales ofrecen variedad, motivación y camaradería. Experimenta la energía positiva de entrenar en grupo mientras trabajas hacia tus metas de fitness."
     },
     "online": {
       "title": "Asesoramiento Online",
-      "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!"
+      "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!",
+      "desc": "Para aquellos que buscan flexibilidad y conveniencia, ofrecemos asesoramiento y entrenamiento personalizado en línea.<br><br>A través de videollamadas, planes de entrenamiento personalizados y seguimiento continuo, te ayudaremos a alcanzar tus objetivos sin importar dónde te encuentres.<br><br>Obtén el apoyo y la orientación que necesitas desde la comodidad de tu hogar."
     },
     "perks": {
       "interview": "Entrevista personal",
