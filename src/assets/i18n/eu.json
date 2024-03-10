@@ -2,13 +2,7 @@
   "nav": {
     "home": "Sarrera",
     "about": "Gutaz",
-    "services": {
-      "text": "Serbitzuak",
-      "personal": "Entrenamendu Pertsonalak",
-      "couple": "Bikoteko Entrenamenduak",
-      "group": "Taldeko saioak",
-      "online": "Online Aholkularitza"
-    },
+    "services": "Serbitzuak",
     "contact":"Kontaktua"
   },
   "footer": {

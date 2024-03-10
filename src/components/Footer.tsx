@@ -65,9 +65,6 @@ export default function Footer() {
             </div>
         }
       </div>
-      <div className="font-light text-gray-400 absolute right-2 bottom-1">
-        v{APP_VERSION}
-      </div>
     </footer>
   )
 }

@@ -2,13 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Nosotros",
-    "services": {
-      "text": "Servicios",
-      "personal": "Entrenamiento Personal",
-      "couple": "Entrenamiento en Pareja",
-      "group": "Sesiones Grupales",
-      "online": "Asesoramiento Online"
-    },
+    "services": "Servicios",
     "contact":"Contacto"
   },
   "footer": {
@@ -94,19 +88,19 @@
   },
   "service": {
     "personal": {
-      "title": "Entrenamientos Personales",
+      "title": "Entrenamiento Personal",
       "subtitle": "La personalización nos caracteriza, nuestro servicio estrella…"
     },
     "couple": {
-      "title": "Entrenamientos en Pareja",
+      "title": "Entrenamiento en Pareja",
       "subtitle": "¿Tienes alguien con quien entrenar? Nosotros os entrenamos de manera personalizada…"
     },
     "group": {
-      "title": "Entrenamientos Grupales",
+      "title": "Sesiones Grupales",
       "subtitle": "La motivación del grupo ayuda a superar tus metas"
     },
     "online": {
-      "title": "Entrenamientos Online",
+      "title": "Asesoramiento Online",
       "subtitle": "Nos adaptamos al material y lugar de entreno disponible. Aqui estamos para ayudarte estés donde estés y tengas el material que tengas!"
     },
     "perks": {

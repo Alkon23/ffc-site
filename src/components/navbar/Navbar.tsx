@@ -28,11 +28,11 @@ export default function Navbar() {
     {text: t("nav.home"), href: '/', type: 'simple', elements: []},
     {text: t("nav.about"), href: '/about', type: 'simple', elements: []},
     {
-      text: t("nav.services.text"), href: '/services', type: 'menu', elements: [
-        {text: t("nav.services.personal"), href: '/personal'},
-        {text: t("nav.services.couple"), href: '/couple'},
-        {text: t("nav.services.group"), href: '/group'},
-        {text: t("nav.services.online"), href: '/online'},
+      text: t("nav.services"), href: '/services', type: 'menu', elements: [
+        {text: t("service.personal.title"), href: '/personal'},
+        {text: t("service.couple.title"), href: '/couple'},
+        {text: t("service.group.title"), href: '/group'},
+        {text: t("service.online.title"), href: '/online'},
       ]
     },
     {text: t("nav.contact"), href: '/contact', type: 'simple', elements: []},

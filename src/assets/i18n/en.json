@@ -2,13 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": {
-      "text": "Services",
-      "personal": "Personal Training",
-      "couple": "Couple Training",
-      "group": "Group Sessions",
-      "online": "Online Advice"
-    },
+    "services": "Services",
     "contact":"Contact"
   },
   "footer": {
