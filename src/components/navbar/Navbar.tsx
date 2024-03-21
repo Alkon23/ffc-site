@@ -1,12 +1,13 @@
 import {IcBurger, IcClose} from "../shared/Icons.tsx";
 import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import LangSelector from "./LangSelector.tsx";
 import {NavMenuButton, NavSimpleButton} from "./NavButton.tsx";
 
 export default function Navbar() {
   const {t} = useTranslation()
+  const {pathname} = useLocation()
   const [isOpaque, setIsOpaque] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -45,7 +46,7 @@ export default function Navbar() {
 
         <NavLink to="/" id="navbar-logo" className="flex items-center">
           <img src="/logo/logo-white-simple.svg" alt="FFC logo" className="h-12 w-12 mr-6 scale-150"/>
-          <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">Functional Fitness Center</span>
+          {pathname === '/' && <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">Functional Fitness Center</span>}
         </NavLink>
 
         <div className="items-baseline">

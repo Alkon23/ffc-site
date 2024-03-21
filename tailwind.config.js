@@ -14,7 +14,8 @@ export default {
                 "secondary": "#6DDB51",
             },
             backgroundImage: {
-                "concrete": "url('/src/assets/black-background.png')"
+                "concrete": "url('/src/assets/black-background.png')",
+                "brush": "url('/src/assets/footer-separator.png')"
             },
             fontFamily: {
                 'bungee': ['Bungee'],
