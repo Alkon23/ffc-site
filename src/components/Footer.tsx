@@ -19,6 +19,12 @@ const socials = [
     href: "https://www.instagram.com/scivitalfit/"
   },
 ]
+const services = [
+  {text: "footer.services.personal", href: '/services/personal'},
+  {text: "footer.services.couple", href: '/services/couple'},
+  {text: "footer.services.group", href: '/services/group'},
+  {text: "footer.services.online", href: '/services/online'},
+]
 
 export default function Footer() {
   const {t} = useTranslation()
@@ -48,7 +54,7 @@ export default function Footer() {
               </div>
           }
 
-          <div id="footer-social" className="py-8 md:p-0">
+          <div id="footer-social" className="pt-8 md:p-0">
             <h3 className="text-2xl text-white pb-1 mb-4 border-b-2">{t("footer.socials")}</h3>
             <ul>
               {socials.map(item => (
@@ -60,6 +66,22 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          {
+            !isMobile ? undefined :
+              <div id="footer-social" className="py-8 md:p-0">
+                <h3 className="text-2xl text-white pb-1 mb-4 border-b-2">{t("footer.services.text")}</h3>
+                <ul>
+                  {services.map(item => (
+                    <li key={item.text}>
+                      <a href={item.href} target="_blank" className="flex items-center hover:text-primary-500">
+                        <span className="mx-1">{t(item.text)}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+          }
 
           {
             !isMobile ? undefined :

@@ -39,7 +39,9 @@ export default function Services() {
   return (
     <>
       <HeaderSmall title={t("services.title")} subtitle={t("nav.services")}/>
-      <div id="services-content-group" className="bg-white text-black flex flex-wrap flex-col md:flex-row justify-evenly p-16">
+      <div id="services-content-group" className="bg-white text-black
+      flex flex-wrap flex-col lg:flex-row justify-evenly
+      px-2 md:px-16 py-16">
         {
           services.map(service => (
             <ServiceCard key={service.id} service={service}/>
@@ -55,12 +57,12 @@ function ServiceCard(props: {service: {id:string, title:string, desc:string, img
   const {service} = props
 
   return (
-    <div id={service.id} className="px-12 py-6 md:px-6
+    <div id={service.id} className="px-6 py-6
     flex flex-col md:basis-[45%] min-[1400px]:basis-1/4
     items-center
     transition ease-in-out duration-300 hover:shadow-xl">
       <NavLink to={service.href}>
-        <img className="w-72 md:w-auto" src={service.img} alt={t(service.title)}/>
+        <img className="w-72 lg:w-auto" src={service.img} alt={t(service.title)}/>
       </NavLink>
       <p className="my-4 text-2xl text-primary-default flex items-center border-b border-primary-default">
         <NavLink to={service.href}>

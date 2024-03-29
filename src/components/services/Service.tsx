@@ -91,15 +91,15 @@ export default function Service(props: { type: SERVICES }) {
   return (
     <>
       <HeaderSmall title={t(service.title)} subtitle={t("nav.services")}/>
-      <div id="services-content-group" className="bg-white text-black p-6 px-20">
-        <div className="flex flex-row">
+      <div id="services-content-group" className="bg-white text-black p-6 px-4 md:px-20">
+        <div className="flex flex-col md:flex-row">
           <img src={service.img} alt={t(service.title)}/>
           <div className="flex flex-col w-full p-8">
             <h3 className="font-medium text-center mb-12">{t(service.subtitle)}</h3>
-            <ul className="marker:content-['✔'] marker:text-secondary text-xl ml-16">
+            <ul className="marker:content-['✔'] marker:text-secondary text-xl md:ml-16">
               {
                 service.perks.map((perk: string, i: number) => (
-                  <li key={`perk-${i}`} className="mb-3">&nbsp;{t(perk)}</li>
+                  <li key={`perk-${i}`} className="mb-3 pl-2">{t(perk)}</li>
                 ))
               }
             </ul>

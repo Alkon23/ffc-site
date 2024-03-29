@@ -62,15 +62,29 @@
 
   .text-stroke-white {
     color: transparent;
-    -webkit-text-stroke: 2px var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-primary);
+  }
+  @media (min-width: 768px) {
+    .text-stroke-white {
+      -webkit-text-stroke: 2px var(--color-primary);
+    }
   }
 
   /* Header neon effect */
   .green-glow {
     color: transparent;
-    -webkit-text-stroke: 3px var(--color-secondary);
-    text-shadow: 0 0 82px rgba(109, 219, 81, 0.51),
+    -webkit-text-stroke: .1rem var(--color-secondary);
+    text-shadow: 0 0 32px rgba(109, 219, 81, 0.51),
+    0 0 82px rgba(109, 219, 81, 0.51),
     0 0 92px rgba(109, 219, 81, 0.51);
+  }
+  @media (min-width: 768px) {
+    .green-glow {
+      color: transparent;
+      -webkit-text-stroke: 3px var(--color-secondary);
+      text-shadow: 0 0 82px rgba(109, 219, 81, 0.51),
+      0 0 92px rgba(109, 219, 81, 0.51);
+    }
   }
 
   /* Footer bulb effect */

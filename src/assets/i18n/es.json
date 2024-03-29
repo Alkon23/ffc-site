@@ -9,7 +9,14 @@
     "find":"Encuentranos",
     "find_address1":"Bermeo, 48370",
     "find_address2":"Bizkaia, España",
-    "socials":"Redes"
+    "socials":"Redes",
+    "services": {
+      "text": "Servicios",
+      "personal": "Personal",
+      "couple": "Pareja",
+      "group": "Grupales",
+      "online": "Online"
+    }
   },
   "home": {
     "more":  "más info",

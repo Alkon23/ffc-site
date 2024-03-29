@@ -9,7 +9,14 @@
     "find":"Aurkitu gaitzazu",
     "find_address1":"Bermeo, 48370",
     "find_address2":"Bizkaia, Euskal Herria",
-    "socials":"Sareak"
+    "socials":"Sareak",
+    "services": {
+      "text": "Serbitzuak",
+      "personal": "Pertsonala",
+      "couple": "Bikoteko",
+      "group": "Taldeko",
+      "online": "Online"
+    }
   },
   "home": {
     "more":  "info gehiago",

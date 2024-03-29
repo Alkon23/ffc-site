@@ -27,8 +27,8 @@ export function HeroBackground(props: HeroProps) {
 
 export function HeroImage(props: HeroProps) {
   return (
-    <section id={props.id} className={`${props.background} w-full h-[45vh] relative overflow-hidden`}>
-      <div className={`w-full h-full absolute ${props.reverse ? 'left-[100%]':'-left-[100%]'} ` +
+    <section id={props.id} className={`${props.background} w-full md:h-[45vh] relative overflow-hidden`}>
+      <div className={`w-full h-full md:absolute ${props.reverse ? 'md:left-[100%]':'md:-left-[100%]'} ` +
              "transition-all ease-out duration-[1250ms] slide-hero"}>
         {/* Actual content*/}
         <div className={"flex items-center w-full h-full flex-col " + (props.reverse ? "md:flex-row-reverse" : "md:flex-row")}>
@@ -48,7 +48,7 @@ export function HeroImage(props: HeroProps) {
           </div>
 
           <div id={props.id + "-img"} className="h-full m-4 md:m-0">
-            <img src={props.img} alt={props.title} className="max-w-none h-full"/>
+            <img src={props.img} alt={props.title} className="md:max-w-none h-full aspect-square"/>
           </div>
         </div>
       </div>
