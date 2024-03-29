@@ -74,7 +74,7 @@ export default function Footer() {
                 <ul>
                   {services.map(item => (
                     <li key={item.text}>
-                      <a href={item.href} target="_blank" className="flex items-center hover:text-primary-500">
+                      <a href={item.href} className="flex items-center hover:text-primary-500">
                         <span className="mx-1">{t(item.text)}</span>
                       </a>
                     </li>
