@@ -54,7 +54,7 @@ export default function About() {
                     item.target ? <IcExternalLink className="ml-1 text-sm hidden ic-external"/> : undefined
                   }
                 </p>
-                <p>{item.desc}</p>
+                <p className="font-montserrat font-light">{item.desc}</p>
               </div>
             ))
           }
