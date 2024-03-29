@@ -39,6 +39,7 @@ export default {
             },
             animation: {
                 'bounce-left': 'bounce-left .3s ease-in-out forwards',
+                'pulse-slow': 'pulse 4s linear infinite'
             }
         },
     },
