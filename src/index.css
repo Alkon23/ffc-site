@@ -73,6 +73,11 @@
     0 0 92px rgba(109, 219, 81, 0.51);
   }
 
+  /* Footer bulb effect */
+  .footer-bulb {
+    background: radial-gradient(rgba(217, 119, 6, 0.5), rgba(217, 119, 6, 0.2), transparent 60%);
+  }
+
   /* Chat flush */
   .chat-flush:after {
     content: ' ';
