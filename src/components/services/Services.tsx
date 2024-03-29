@@ -55,7 +55,10 @@ function ServiceCard(props: {service: {id:string, title:string, desc:string, img
   const {service} = props
 
   return (
-    <div id={service.id} className="px-12 py-6 md:px-6 md:max-w-sm flex flex-col items-center transition ease-in-out duration-300 hover:shadow-xl">
+    <div id={service.id} className="px-12 py-6 md:px-6
+    flex flex-col md:basis-[45%] min-[1400px]:basis-1/4
+    items-center
+    transition ease-in-out duration-300 hover:shadow-xl">
       <NavLink to={service.href}>
         <img className="w-72 md:w-auto" src={service.img} alt={t(service.title)}/>
       </NavLink>
