@@ -13,7 +13,7 @@ export function HeroBackground(props: HeroProps) {
           <h2 className="font-bold">{props.title}</h2>
 
           <div className="mb-8 mt-4 ">
-            <p>{props.desc}</p>
+            <p className="font-montserrat">{props.desc}</p>
           </div>
 
           <div>
@@ -38,7 +38,7 @@ export function HeroImage(props: HeroProps) {
               <h2 className="font-bold">{props.title}</h2>
 
               <div className="mb-8 mt-4 w-[80%]">
-                <p>{props.desc}</p>
+                <p className="font-montserrat">{props.desc}</p>
               </div>
 
               <div className="px-5 py-2.5">
