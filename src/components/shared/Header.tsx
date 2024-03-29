@@ -4,6 +4,14 @@ import {useTranslation} from "react-i18next";
 export default function Header() {
   const {t} = useTranslation()
 
+  const onScrollToInfo = () => {
+    const heroOffset: number = orElse(document.getElementById("about-hero")?.offsetTop, 0)
+    const navbarHeight: number = orElse(document.getElementById("navbar-container")?.offsetHeight,0)
+    window.scrollTo({top: heroOffset - navbarHeight, behavior: "smooth"})
+  }
+
+  const orElse = (value: number | undefined, elseValue: number) => value === undefined ? elseValue : value
+
   return (
     <header id="header-container">
       <div id="header-image" className="bg-concrete bg-cover bg-no-repeat bg-center h-screen">
@@ -16,9 +24,9 @@ export default function Header() {
           {/*<h3 className="text-3xl md:text-4xl">Building Functional Humans</h3>*/}
         </div>
         <div className="absolute bottom-0 w-full text-center animate-bounce">
-          <h5 className="inline-flex items-center mb-1.5">
+          <button type="button" className="inline-flex items-center mb-1.5" onClick={onScrollToInfo}>
             <IcTriangleDown className="mt-1 text-2xs"/>&nbsp;{t("home.more")}&nbsp;<IcTriangleDown className="mt-1 text-2xs"/>
-          </h5>
+          </button>
         </div>
       </div>
     </header>
