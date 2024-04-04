@@ -21,7 +21,10 @@ export default function Navbar() {
     winScroll > 200 ? setIsOpaque(true) : setIsOpaque(false)
   }
 
-  const handleClick = () => {
+  const handleMenuBlur = () =>{
+    setTimeout(() => setIsOpen(false), 100)
+  }
+  const toggleMobileMenu = () => {
     setIsOpen(isOpen => !isOpen)
   }
   const handleNavigation = (target: string) => {
@@ -59,7 +62,10 @@ export default function Navbar() {
         </NavLink>
 
         <div className="items-baseline">
-          <button onClick={handleClick} className="md:hidden text-2xl">
+          <button onClick={() => {
+            toggleMobileMenu()
+            setTimeout(() => document.getElementById('navbar-buttons-vertical')?.focus(), 100)
+          }} className="md:hidden text-2xl">
             {isOpen ? <IcClose/> : <IcBurger/>}
           </button>
 
@@ -85,16 +91,19 @@ export default function Navbar() {
       </div>
 
       {/* Hidden vertical navbar for small displays */}
-      <div id="navbar-buttons-vertical" className={
-        "bg-primary-default bg-opacity-80 backdrop-blur-sm py-4 mt-2 mx-[0.5rem] w-[calc(100%-1rem)] fixed border border-primary-400 rounded-lg text-center justify-center md:hidden " +
-        (isOpen ? "flex" : "hidden")}>
+      <div tabIndex={0} id="navbar-buttons-vertical" onBlur={handleMenuBlur} className={
+        "bg-primary-default bg-opacity-80 backdrop-blur-sm " +
+        "py-4 mt-2 mx-[0.5rem] w-[calc(100%-1rem)] " +
+        "border border-primary-400 rounded-lg " +
+        "text-center justify-center " +
+        "fixed md:hidden " + (isOpen ? "flex" : "hidden")}>
         <ul className="w-1/2">
           {navigation.map((item) => (
             <li className="mt-1" key={item.text}>
               <NavLink
                 to={item.href}
                 onClick={() => {
-                  handleClick()
+                  toggleMobileMenu()
                   handleNavigation(item.href)
                 }}
                 className={(state) =>
