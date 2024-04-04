@@ -37,7 +37,7 @@ export default function Footer() {
 
   return (
     <footer className="relative before:bg-brush before:absolute before:-top-[20px] before:w-full before:h-[20px]">
-      <div className="w-full h-full overflow-hidden pt-16 pb-20 relative before:animate-pulse-slow
+      <div className="w-full h-full overflow-hidden pt-16 pb-20 relative before:animate-pulse
       before:absolute before:w-full before:h-[600px] before:footer-bulb before:-z-10 before:left-1/2 before:-translate-x-1/2">
 
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around text-gray-500">
