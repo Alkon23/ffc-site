@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import {IcTriangleDown} from "../shared/Icons.tsx";
 
-type ButtonProps = { text: string, href: string }
+type ButtonProps = { text: string, href: string, onClick: () => void }
 
 export function NavSimpleButton(props: ButtonProps) {
 
@@ -9,6 +9,7 @@ export function NavSimpleButton(props: ButtonProps) {
     <>
       <NavLink
         to={props.href}
+        onClick={props.onClick}
         className={(state) =>
           (state.isActive ? "" : "after:scale-x-0 after:hover:scale-x-100 ") +
           "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 " +
@@ -36,6 +37,7 @@ export function NavMenuButton(props: MenuButtonProps) {
     <div className="group">
       <NavLink
         to={base.href}
+        onClick={base.onClick}
         className={(state) =>
           (state.isActive ? "" : "after:scale-x-0 after:group-hover:scale-x-100 ") +
           "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 " +
@@ -52,6 +54,7 @@ export function NavMenuButton(props: MenuButtonProps) {
           <div key={element.text} className='transition hover:translate-x-2'>
             <NavLink
               to={base.href + element.href}
+              onClick={element.onClick}
               style={setDelay(i)}
               className={`${props.isOpaque ? "bg-opacity-100" : "bg-opacity-50"} ` +
                 'transition duration-700 bg-primary-default block px-3 first:pt-3 pb-3 opacity-0 group-hover:animate-bounce-left'}>

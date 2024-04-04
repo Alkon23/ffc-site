@@ -24,6 +24,11 @@ export default function Navbar() {
   const handleClick = () => {
     setIsOpen(isOpen => !isOpen)
   }
+  const handleNavigation = (target: string) => {
+    if (pathname === target) {
+      window.scrollTo({top: 0, behavior: "smooth"})
+    }
+  }
 
   const navigation = [
     {text: t("nav.home"), href: '/', type: 'simple', elements: []},
@@ -44,9 +49,13 @@ export default function Navbar() {
       <div id="navbar-content" className={`${isOpaque ? "bg-opacity-100" : "bg-opacity-0"} transition duration-700 bg-primary-default 
       px-16 py-4 flex justify-between items-center`}>
 
-        <NavLink to="/" id="navbar-logo" className="flex items-center">
+        <NavLink to="/" id="navbar-logo" className="flex items-center" onClick={() => handleNavigation("/")}>
           <img src="/logo/logo-white-simple.svg" alt="FFC logo" className="h-12 w-12 mr-6 scale-150"/>
-          {pathname === '/' && <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">Functional Fitness Center</span>}
+          {pathname === '/' &&
+              <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">
+                Functional Fitness Center
+              </span>
+          }
         </NavLink>
 
         <div className="items-baseline">
@@ -59,8 +68,13 @@ export default function Navbar() {
               {navigation.map((item) => (
                 <li className="ml-1" key={item.text}>
                   {item.type === 'simple' ?
-                    <NavSimpleButton text={item.text} href={item.href}/> :
-                    <NavMenuButton base={{text: item.text, href: item.href}} elements={item.elements} isOpaque={isOpaque}/>
+                    <NavSimpleButton text={item.text} href={item.href} onClick={() => handleNavigation(item.href)}/>
+                    :
+                    <NavMenuButton base={{text: item.text, href: item.href, onClick: () => handleNavigation(item.href)}}
+                                   elements={item.elements.map((e) => {
+                                     return {...e, onClick: () => handleNavigation(e.href)}
+                                   })}
+                                   isOpaque={isOpaque}/>
                   }
                 </li>
               ))}
@@ -79,7 +93,10 @@ export default function Navbar() {
             <li className="mt-1" key={item.text}>
               <NavLink
                 to={item.href}
-                onClick={handleClick}
+                onClick={() => {
+                  handleClick()
+                  handleNavigation(item.href)
+                }}
                 className={(state) =>
                   (state.isActive ? "" : "after:scale-x-0 after:hover:scale-x-100 ") +
                   "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 after:content-[''] font-medium"
