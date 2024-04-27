@@ -71,7 +71,7 @@ export default function Contact() {
 function ContactCard(props: { title: string, children: any }) {
   return (
     <div className="bg-gray-200 odd:bg-white w-full px-10 pb-28 pt-20">
-      <h2 className="mb-10 text-primary-default">{props.title}</h2>
+      <h2 className="mb-10 text-primary-default font-normal">{props.title}</h2>
       <div className="font-montserrat font-light">
         {props.children}
       </div>

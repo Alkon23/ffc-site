@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {NavLink, useLocation} from "react-router-dom";
 import LangSelector from "./LangSelector.tsx";
-import {NavMenuButton, NavSimpleButton} from "./NavButton.tsx";
+import {NavHighlightButton, NavMenuButton, NavSimpleButton} from "./NavButton.tsx";
 
 export default function Navbar() {
   const {t} = useTranslation()
@@ -21,7 +21,7 @@ export default function Navbar() {
     winScroll > 200 ? setIsOpaque(true) : setIsOpaque(false)
   }
 
-  const handleMenuBlur = () =>{
+  const handleMenuBlur = () => {
     setTimeout(() => setIsOpen(false), 100)
   }
   const toggleMobileMenu = () => {
@@ -35,16 +35,16 @@ export default function Navbar() {
 
   const navigation = [
     {text: t("nav.home"), href: '/', type: 'simple', elements: []},
-    {text: t("nav.about"), href: '/about', type: 'simple', elements: []},
+    {text: t("nav.about"), href: '/#about', type: 'simple', elements: []},
     {
-      text: t("nav.services"), href: '/services', type: 'menu', elements: [
+      text: t("nav.services"), href: '/#services', type: 'menu', elements: [
         {text: t("service.personal.title"), href: '/personal'},
         {text: t("service.couple.title"), href: '/couple'},
         {text: t("service.group.title"), href: '/group'},
         {text: t("service.online.title"), href: '/online'},
       ]
     },
-    {text: t("nav.contact"), href: '/contact', type: 'simple', elements: []},
+    {text: t("nav.contact"), href: '/contact', type: 'highlight', elements: []},
   ]
 
   return (
@@ -56,7 +56,7 @@ export default function Navbar() {
           <img src="/logo/logo-white-simple.svg" alt="FFC logo" className="h-12 w-12 mr-6 scale-150"/>
           {pathname === '/' &&
               <span className="font-neon-energy-x font-bold text-2xl hidden sm:block md:hidden lg:block">
-                Functional Fitness Center
+                Science Vitality Fitness
               </span>
           }
         </NavLink>
@@ -76,15 +76,19 @@ export default function Navbar() {
                   {item.type === 'simple' ?
                     <NavSimpleButton text={item.text} href={item.href} onClick={() => handleNavigation(item.href)}/>
                     :
-                    <NavMenuButton base={{text: item.text, href: item.href, onClick: () => handleNavigation(item.href)}}
-                                   elements={item.elements.map((e) => {
-                                     return {...e, onClick: () => handleNavigation(e.href)}
-                                   })}
-                                   isOpaque={isOpaque}/>
+                    item.type === 'highlight' ?
+                      <NavHighlightButton text={item.text} href={item.href} onClick={() => handleNavigation(item.href)}/>
+                      :
+                      <NavMenuButton
+                        base={{text: item.text, href: item.href, onClick: () => handleNavigation(item.href)}}
+                        elements={item.elements.map((e) => {
+                          return {...e, onClick: () => handleNavigation(e.href)}
+                        })}
+                        isOpaque={isOpaque}/>
                   }
                 </li>
               ))}
-              <li className="ml-2"><LangSelector/></li>
+              <li className="ml-5"><LangSelector/></li>
             </ul>
           </div>
         </div>
@@ -108,7 +112,7 @@ export default function Navbar() {
                 }}
                 className={(state) =>
                   (state.isActive ? "" : "after:scale-x-0 after:hover:scale-x-100 ") +
-                  "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 after:content-[''] font-medium"
+                  "after:pb-2 after:block after:border-b after:border-white after:transition after:duration-300 after:content-[''] font-semibold"
                 }>
                   <span className="px-3">
                     {item.text}

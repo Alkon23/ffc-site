@@ -1,0 +1,73 @@
+import {Trans, useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
+
+export default function Services() {
+
+  const services = [
+    {
+      id: "service-personal",
+      title: "service.personal.title",
+      desc: "service.personal.desc",
+      img: "/profile-pic.jpg",
+      href: "/services/personal"
+    },
+    {
+      id: "service-couple",
+      title: "service.couple.title",
+      desc: "service.couple.desc",
+      img: "/profile-pic.jpg",
+      href: "/services/couple"
+    },
+    {
+      id: "service-group",
+      title: "service.group.title",
+      desc: "service.group.desc",
+      img: "/profile-pic.jpg",
+      href: "/services/group"
+    },
+    {
+      id: "service-online",
+      title: "service.online.title",
+      desc: "service.online.desc",
+      img: "/profile-pic.jpg",
+      href: "/services/online"
+    },
+  ]
+
+  return (
+    <section id="services" className="flex flex-col items-center py-8">
+      <h2 className="text-black">Mis servicios como entrenador personal</h2>
+      <div id="services-content-group" className="bg-white text-black
+      flex flex-wrap flex-col lg:flex-row justify-evenly
+      px-2 md:px-16 py-8">
+        {
+          services.map(service => (
+            <ServiceCard key={service.id} service={service}/>
+          ))
+        }
+      </div>
+    </section>
+  )
+}
+
+function ServiceCard(props: {service: {id:string, title:string, desc:string, img:string, href:string}}) {
+  const {t} = useTranslation()
+  const {service} = props
+
+  return (
+    <div id={service.id} className="px-6 py-6
+    flex flex-col md:basis-[45%] min-[1400px]:basis-1/4
+    items-center
+    transition ease-in-out duration-300 hover:shadow-xl hover:scale-105">
+      <NavLink to={service.href}>
+        <img className="w-72 lg:w-auto" src={service.img} alt={t(service.title)}/>
+      </NavLink>
+      <p className="my-4 text-2xl text-primary-default flex items-center border-b border-primary-default">
+        <NavLink to={service.href}>
+          {t(service.title)}
+        </NavLink>
+      </p>
+      <p className="font-montserrat font-light text-center"><Trans i18nKey={service.desc}/></p>
+    </div>
+  )
+}

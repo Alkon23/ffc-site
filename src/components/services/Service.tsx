@@ -95,7 +95,7 @@ export default function Service(props: { type: SERVICES }) {
         <div className="flex flex-col md:flex-row">
           <img src={service.img} alt={t(service.title)}/>
           <div className="flex flex-col w-full p-8">
-            <h3 className="font-medium text-center mb-12">{t(service.subtitle)}</h3>
+            <h3 className="font-semibold text-center mb-12">{t(service.subtitle)}</h3>
             <ul className="marker:content-['✔'] marker:text-secondary text-xl md:ml-16">
               {
                 service.perks.map((perk: string, i: number) => (

@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
-import Home from "./components/Home.tsx";
+import Home from "./components/home/Home.tsx";
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import About from "./components/About.tsx";
 import Services from "./components/services/Services.tsx";
@@ -19,7 +19,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/services" element={<Services/>}/>
           <Route path="/services" element={<Services/>}/>
           <Route path="/services/personal" element={<Service type={SERVICES.Personal}/>}/>
           <Route path="/services/couple" element={<Service type={SERVICES.Couple}/>}/>

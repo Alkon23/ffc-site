@@ -22,6 +22,7 @@ export default {
                 'anton': ['Anton'],
                 'montserrat': ['Montserrat'],
                 'archivo-black': ['Archivo Black'],
+                // 'shadows-into-light': ['Shadows Into Light'],
                 'neon-energy-x': ['Neon Energy X'],
             },
             scale: {
